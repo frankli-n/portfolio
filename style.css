@@ -1,5 +1,7 @@
 html {
     background-color: rgb(0, 0, 0);
+    /* background-image: url("fitzroy.jpg"); */
+
 }
 
 .center {
@@ -95,7 +97,7 @@ html {
 }
 
 #asterix {
-    cursor: crosshair;
+    cursor: pointer;
     transition: all 2s ease-out;
     color: white;
     animation: bgColor 5s infinite linear;
@@ -144,8 +146,6 @@ html {
 
 #content {
     display: none;
-
-    
 }
 
 .websites {
@@ -162,6 +162,7 @@ html {
     font-size: 60px;
     padding-left: 100px;
     padding-top: 50px;
+    
 }
 
 #links {
