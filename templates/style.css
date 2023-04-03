@@ -1,0 +1,192 @@
+html {
+    background-color: rgb(0, 0, 0);
+}
+
+.center {
+    cursor: crosshair;
+    margin: 0;
+    width: 99.7%;
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+#franklin {
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+#f {
+    transition: all 0.2s ease-in;
+    opacity: .5;
+    
+}
+#f:hover {
+    color: #ef7810;
+    opacity: 1;
+}
+#r {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#r:hover {
+    color: yellow;
+    opacity: 1;
+}
+#a {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#a:hover {
+    color: #4c2397;
+    opacity: 1;
+
+}
+#n {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#n:hover {
+    color: #449723;
+    opacity: 1;
+}
+#k {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#k:hover {
+    color: #972332;
+    opacity: 1;
+}
+#l {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#l:hover {
+    color: #4f9723;
+    opacity: 1;
+}
+#i {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#i:hover {
+    color: #5b2397;
+    opacity: 1;
+}
+#dash {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#dash:hover {
+    color: #239597;
+    opacity: 1;
+}
+#n2 {
+    transition: all 0.2s ease-out;
+    opacity: .5;
+}
+#n2:hover {
+    color: #972395;
+    opacity: 1;
+}
+
+#asterix {
+    cursor: crosshair;
+    transition: all 2s ease-out;
+    color: white;
+    animation: bgColor 5s infinite linear;
+    color: #239597;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: .075;
+}
+
+#asterix:hover{
+    opacity: 1 ;
+    color: white;
+    animation-play-state: paused;
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+@keyframes bgColor {
+    12.5% {
+      color: #ef7810;
+    }
+    25% {
+      color: yellow;
+    }
+    37.5% {
+      color: #4c2397;
+    }
+    50% {
+      color: #7FFF00;
+    }
+    62.5% {
+      color: #972332;
+    }
+    75% {
+      color: #4f9723;
+    }
+    87.5% {
+      color: #5b2397;
+    }
+    100% {
+      color: #239597;
+    }
+  }
+
+#content {
+    display: none;
+
+    
+}
+
+.websites {
+    margin: 0;
+    width: 99.7%;
+    height: 80vh;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 900;
+    color: #ccc1b7;
+    opacity: .5;
+    transition: all 0.2s ease-out;
+    width: 2vw;
+    font-size: 60px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#links {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 100;
+    width: 100vw;
+    text-align: left;
+    /* overflow: hidden; */
+}
+a:link {
+    color: rgb(211, 211, 245);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
