@@ -1,6 +1,6 @@
 html {
     background-color: rgb(0, 0, 0);
-    /* background-image: url("fitzroy.jpg"); */
+
 
 }
 
@@ -146,21 +146,25 @@ html {
 
 #content {
     display: none;
+    height: 100%;
+
 }
 
 .websites {
+    /* background-color: #111; */
     margin: 0;
     width: 99.7%;
-    height: 80vh;
-    text-align: center;
+    height: 6em;
+    text-align: left;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 900;
     color: #ccc1b7;
-    opacity: .5;
+    opacity: 1;
     transition: all 0.2s ease-out;
-    width: 2vw;
+    width: 50vw;
     font-size: 60px;
-    padding-left: 100px;
+    padding-left: 50px;
+    margin-left: 50px;;
     padding-top: 50px;
     
 }
