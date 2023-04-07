@@ -51,7 +51,7 @@ section {
 }
 
 h2 {
-    color: #972332;
+    color: #880b07;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 900;
     font-size: 1em;
@@ -86,12 +86,13 @@ li {
     padding-left: 0px;
 }
 a:link {
-    color: rgb(211, 211, 245);
+    color: #436d9f;
     background-color: transparent;
     text-decoration: none;
+    
   }
 a:visited {
-    /* color: pink; */
+    color: #436d9f;
     background-color: transparent;
     text-decoration: none;
   }
@@ -105,10 +106,22 @@ a:active {
     text-decoration: underline;
 }
 
+img {
+    width: 1000px;
+    height: 500px;
+    -moz-filter: blur(14px);
+    -webkit-filter: blur(14px);
+    filter: blur(14px);
 
+}
 
-
-
+img:hover {
+    /* transform: rotate(180deg); */
+    transition: all 1s ease-in-out;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
 
   #franklin {
 
