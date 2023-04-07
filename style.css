@@ -1,21 +1,104 @@
 html {
     background-color: rgb(0, 0, 0);
-
-
 }
 
-.center {
+.container {
     cursor: crosshair;
     margin: 0;
-    width: 99.7%;
-    padding-top: 100px;
-    text-align: center;
+    padding: 100px;
+    padding-top: 50px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 100px;
-    font-weight: 900;
+    font-weight: 900; 
 }
 
-#franklin {
+section {
+    padding-bottom: 50px;
+}
+
+#asterix {
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 10em;
+    font-weight: 900;   
+    text-align: center;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    color: white;
+    animation: bgColor 5s infinite linear;
+    color: #239597;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: .075;
+}
+
+#asterix:hover{
+    opacity: 1 ;
+    color: white;
+    animation-play-state: paused;
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+#content {
+    display: none;
+    height: 100%;
+}
+.websites {
+    height: 6em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 900;
+    color: #972332;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    width: 50vw;
+    font-size: 60px;    
+}
+
+
+li {
+    list-style-type:circle;
+    font-size: .5em;
+}
+
+#links {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 100;
+    width: 80vw;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+a:link {
+    color: rgb(211, 211, 245);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited {
+    /* color: pink; */
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+  #franklin {
     -moz-filter: blur(4px);
     -webkit-filter: blur(4px);
     filter: blur(4px);
@@ -96,26 +179,6 @@ html {
     opacity: 1;
 }
 
-#asterix {
-    cursor: pointer;
-    transition: all 2s ease-out;
-    color: white;
-    animation: bgColor 5s infinite linear;
-    color: #239597;
-    -moz-filter: blur(0px);
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: .075;
-}
-
-#asterix:hover{
-    opacity: 1 ;
-    color: white;
-    animation-play-state: paused;
-    -moz-filter: blur(4px);
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-}
 
 @keyframes bgColor {
     12.5% {
@@ -142,62 +205,4 @@ html {
     100% {
       color: #239597;
     }
-  }
-
-#content {
-    display: none;
-    height: 100%;
-
-}
-
-.websites {
-    /* background-color: #111; */
-    margin: 0;
-    height: 6em;
-    text-align: left;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: 900;
-    color: #972332;
-    opacity: 1;
-    transition: all 0.2s ease-out;
-    width: 50vw;
-    font-size: 60px;
-    padding-left: 50px;
-    margin-left: 50px;;
-    padding-top: 50px;
-    
-}
-
-
-li {
-    /* list-style:square; */
-    list-style-type:circle;
-    font-size: .5em;
-}
-
-#links {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: 100;
-    width: 80vw;
-    text-align: left;
-    /* overflow: hidden; */
-}
-a:link {
-    color: rgb(211, 211, 245);
-    background-color: transparent;
-    text-decoration: none;
-  }
-a:visited {
-    /* color: pink; */
-    background-color: transparent;
-    text-decoration: none;
-  }
-a:hover {
-    background-color: transparent;
-    text-decoration: underline;
-  }
-a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
   }

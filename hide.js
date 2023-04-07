@@ -14,3 +14,10 @@ function hideFunction() {
         document.getElementById("n2").style.color = "972395";
     } 
 }
+
+const asterix = document.getElementById("asterix")
+
+asterix.addEventListener("click", function(){
+    asterix.style.display = "none"
+}
+)
