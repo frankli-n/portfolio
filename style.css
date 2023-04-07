@@ -107,6 +107,7 @@ a:active {
 }
 
 img {
+    margin-top: 10px;
     width: 1000px;
     height: 500px;
     -moz-filter: blur(14px);
@@ -115,7 +116,7 @@ img {
 
 }
 
-img:hover {
+#birds:hover img {
     /* transform: rotate(180deg); */
     transition: all 1s ease-in-out;
     -moz-filter: blur(0px);
