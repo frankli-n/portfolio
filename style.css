@@ -153,12 +153,11 @@ html {
 .websites {
     /* background-color: #111; */
     margin: 0;
-    width: 99.7%;
     height: 6em;
     text-align: left;
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 900;
-    color: #ccc1b7;
+    color: #972332;
     opacity: 1;
     transition: all 0.2s ease-out;
     width: 50vw;
@@ -169,10 +168,17 @@ html {
     
 }
 
+
+li {
+    /* list-style:square; */
+    list-style-type:circle;
+    font-size: .5em;
+}
+
 #links {
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: 100;
-    width: 100vw;
+    width: 80vw;
     text-align: left;
     /* overflow: hidden; */
 }
@@ -182,7 +188,7 @@ a:link {
     text-decoration: none;
   }
 a:visited {
-    color: pink;
+    /* color: pink; */
     background-color: transparent;
     text-decoration: none;
   }
