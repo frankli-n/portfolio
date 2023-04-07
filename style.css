@@ -107,12 +107,14 @@ a:active {
 }
 
 img {
+    cursor: pointer;
     margin-top: 10px;
     width: 1000px;
     height: 500px;
     -moz-filter: blur(14px);
     -webkit-filter: blur(14px);
     filter: blur(14px);
+    object-fit: cover;
 
 }
 
@@ -123,10 +125,6 @@ img {
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
-
-  #franklin {
-
-}
 
 #f {
     transition: all 0.2s ease-in;
