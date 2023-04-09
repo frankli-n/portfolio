@@ -53,4 +53,3 @@ function birdsFunction() {
 }
 
 
-https://frankli-n.github.io/portfolio/crap-birds/corella-pie.jpg
