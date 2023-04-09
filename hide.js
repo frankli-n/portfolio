@@ -32,23 +32,23 @@ function birdsFunction() {
     // console.log(`${iBird.split("assets")}${birdImg}`)
 
     
-    if (iBird.split("assets")[1] === "/corella-pie.jpg") {
+    if (iBird.split("assets")[1] === "/corella.jpg") {
         let birdImg = "assets/jumpers.jpg"
         birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
     else if (iBird.split("assets")[1] === "/jumpers.jpg") {
-        let birdImg = "assets/cockatoos-cards.jpg"
+        let birdImg = "assets/pelican.jpg"
         birds.innerHTML =`<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird.split("assets")[1] === "/cockatoos-cards.jpg") {
+    else if (iBird.split("assets")[1] === "/pelican.jpg") {
         let birdImg = "assets/turkey.jpg"
         birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
     else if (iBird.split("assets")[1] === "/turkey.jpg") {
-        let birdImg = "assets/corella-pie.jpg"
+        let birdImg = "assets/corella.jpg"
         birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
