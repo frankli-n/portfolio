@@ -3,9 +3,9 @@ const projects = document.getElementById("project-section")
 const birds = document.getElementById("birds")
 
 const birdList = []
-//     corellaPie:`<h2>birds:</h2><img id="birds" src="assets/corella-pie.jpg" alt="imagine a bird"></img>`,
-//     jumpers:`<h2>birds:</h2><img id="birds" src="assets/jumpers.jpg" alt="imagine a bird"></img>`,
-//     cockatoos:`<h2>birds:</h2><img id="birds" src="assets/cockatoos-cards.jpg" alt="imagine a bird"></img>`
+//     corellaPie:`<h2>birds:</h2><img id="birds" src="https://frankli-n.github.io/portfolio//corella-pie.jpg" alt="imagine a bird"></img>`,
+//     jumpers:`<h2>birds:</h2><img id="birds" src="https://frankli-n.github.io/portfolio//jumpers.jpg" alt="imagine a bird"></img>`,
+//     cockatoos:`<h2>birds:</h2><img id="birds" src="https://frankli-n.github.io/portfolio//cockatoos-cards.jpg" alt="imagine a bird"></img>`
 //     }
 
 
@@ -32,22 +32,25 @@ birds.addEventListener("click", function () {
 function birdsFunction() {
     let iBird = document.getElementById("iBird").src
 
-    // birds.innerHTML = `<h2>birds:</h2><img id="birds" src="assets/jumpers.jpg" alt="imagine a bird"></img>`
+    // birds.innerHTML = `<h2>birds:</h2><img id="birds" src="https://frankli-n.github.io/portfolio//jumpers.jpg" alt="imagine a bird"></img>`
     console.log(iBird)
-    if (iBird === "assets/corella-pie.jpgg") {
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="assets/jumpers.jpg" alt="imagine a bird"></img>`
+    if (iBird === "https://frankli-n.github.io/portfolio//corella-pie.jpgg") {
+        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="https://frankli-n.github.io/portfolio//jumpers.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird === "assets/jumpers.jpg") {
-        birds.innerHTML =`<h2>birds:</h2><img id="iBird" src="assets/cockatoos-cards.jpg" alt="imagine a bird"></img>`
+    else if (iBird === "https://frankli-n.github.io/portfolio//jumpers.jpg") {
+        birds.innerHTML =`<h2>birds:</h2><img id="iBird" src="https://frankli-n.github.io/portfolio//cockatoos-cards.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird === "assets/cockatoos-cards.jpg") {
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="assets/turkey.jpg" alt="imagine a bird"></img>`
+    else if (iBird === "https://frankli-n.github.io/portfolio//cockatoos-cards.jpg") {
+        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="https://frankli-n.github.io/portfolio//turkey.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird === "assets/turkey-cards.jpg") {
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="assets/corella-pie.jpg" alt="imagine a bird"></img>`
+    else if (iBird === "https://frankli-n.github.io/portfolio//turkey-cards.jpg") {
+        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="https://frankli-n.github.io/portfolio//corella-pie.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
 }
+
+
+https://frankli-n.github.io/portfolio/crap-birds/corella-pie.jpg
