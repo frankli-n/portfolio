@@ -34,15 +34,15 @@ function birdsFunction() {
 
     // birds.innerHTML = `<h2>birds:</h2><img id="birds" src="crap-birds/jumpers.jpg" alt="imagine a bird"></img>`
     console.log(iBird)
-    if (iBird === "http://127.0.0.1:5500/crap-birds/corella-pie.jpg") {
+    if (iBird === "./crap-birds/corella-pie.jpg") {
         birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="crap-birds/jumpers.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird === "http://127.0.0.1:5500/crap-birds/jumpers.jpg") {
+    else if (iBird === "./crap-birds/jumpers.jpg") {
         birds.innerHTML =`<h2>birds:</h2><img id="iBird" src="crap-birds/cockatoos-cards.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird === "http://127.0.0.1:5500/crap-birds/cockatoos-cards.jpg") {
+    else if (iBird === "./crap-birds/cockatoos-cards.jpg") {
         birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="crap-birds/corella-pie.jpg" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
