@@ -1,0 +1,26 @@
+@keyframes bgColor {
+    12.5% {
+      color: #ef7810;
+    }
+    25% {
+      color: yellow;
+    }
+    37.5% {
+      color: #4c2397;
+    }
+    50% {
+      color: #7FFF00;
+    }
+    62.5% {
+      color: #972332;
+    }
+    75% {
+      color: #4f9723;
+    }
+    87.5% {
+      color: #5b2397;
+    }
+    100% {
+      color: #239597;
+    }
+  }
