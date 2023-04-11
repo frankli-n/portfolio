@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 html {
     background-color: rgb(0, 0, 0);
 }
@@ -47,7 +51,10 @@ section {
 
 #project-section {
     display: none;
-    font-size: 60px;    
+    font-size: 60px;
+    /* -moz-filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+    filter: blur(2.5px);     */
 }
 
 h2 {
@@ -75,6 +82,9 @@ li {
     list-style-type:circle;
     font-size: .5em;
     color: 972332;
+    -moz-filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+    filter: blur(2.5px);
 }
 
 #links {
@@ -115,16 +125,31 @@ img {
     -webkit-filter: blur(14px);
     filter: blur(14px);
     object-fit: cover;
+    transition: all 1s ease-in-out;
+
 
 }
 
-#birds:hover img {
+#project-section:hover img {
     /* transform: rotate(180deg); */
-    transition: all 1s ease-in-out;
+    transition: all .2s ease-in-out;
     -moz-filter: blur(0px);
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
+  #project-section:hover li {
+    /* transform: rotate(180deg); */
+    transition: all .2s ease-in-out;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+/* 
+#ex a:visited  {
+    color: pink;
+} */
 
-
+/* #ex {
+    background-color: green;
+} */

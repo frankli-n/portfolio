@@ -1,6 +1,8 @@
 const asterix = document.getElementById("asterix")
 const projects = document.getElementById("project-section")
-const birds = document.getElementById("birds")
+const projectImg = document.getElementById("projectImg")
+const ex = document.getElementById("ex")
+let iBird = document.getElementById("iBird").src
 
 
 asterix.addEventListener("click", function () {
@@ -19,39 +21,61 @@ asterix.addEventListener("click", function () {
 }
 )
 
-birds.addEventListener("click", function () {
-    birdsFunction()
+projectImg.addEventListener("click", function () {
+    projectImgFunction()
 })
 
-function birdsFunction() {
-    let iBird = document.getElementById("iBird").src
-
-    // birds.innerHTML = `<h2>birds:</h2><img id="birds" src="https://frankli-n.github.io/portfolio//jumpers.jpg" alt="imagine a bird"></img>`
-    // console.log(iBird)
-    // console.log(iBird.split("assets"))
-    // console.log(`${iBird.split("assets")}${birdImg}`)
-
-    
-    if (iBird.split("assets")[1] === "/corella.jpg") {
-        let birdImg = "assets/jumpers.jpg"
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+function projectImgFunction() {
+    if (iBird.split("assets")[1] === "/ex.png") {
+        let birdImg = "assets/me.png"
+        projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird.split("assets")[1] === "/jumpers.jpg") {
-        let birdImg = "assets/pelican.jpg"
-        birds.innerHTML =`<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    else if (iBird.split("assets")[1] === "/me.png") {
+        let birdImg = "assets/mm.png"
+        projectImg.innerHTML =`<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird.split("assets")[1] === "/pelican.jpg") {
-        let birdImg = "assets/turkey.jpg"
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    else if (iBird.split("assets")[1] === "/mm.png") {
+        let birdImg = "assets/ip.png"
+        projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
-    else if (iBird.split("assets")[1] === "/turkey.jpg") {
-        let birdImg = "assets/corella.jpg"
-        birds.innerHTML = `<h2>birds:</h2><img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    else if (iBird.split("assets")[1] === "/ip.png") {
+        let birdImg = "assets/da.png"
+        projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
         iBird = document.getElementById("iBird").src
     }
 }
+
+me.addEventListener("mouseover", function() {
+    let birdImg = "assets/me.png"
+    projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    iBird = document.getElementById("iBird").src
+})
+
+ex.addEventListener("mouseover", function() {
+    let birdImg = "assets/ex.png"
+    projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    iBird = document.getElementById("iBird").src
+})
+
+da.addEventListener("mouseover", function() {
+    let birdImg = "assets/da.png"
+    projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    iBird = document.getElementById("iBird").src
+})
+
+ip.addEventListener("mouseover", function() {
+    let birdImg = "assets/ip.png"
+    projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    iBird = document.getElementById("iBird").src
+})
+
+mm.addEventListener("mouseover", function() {
+    let birdImg = "assets/mm.png"
+    projectImg.innerHTML = `<img id="iBird" src="${iBird.split("assets")[0]}${birdImg}" alt="imagine a bird"></img>`
+    iBird = document.getElementById("iBird").src
+})
 
 
