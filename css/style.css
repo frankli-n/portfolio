@@ -128,8 +128,39 @@ img {
     filter: blur(14px);
     object-fit: cover;
     transition: all 1s ease-in-out;
-
+    border-width: 2px;
+    border-style: solid;
+    animation: borderColor 112s infinite;
   }
+
+/* Define the keyframes for the border color gradient */
+@keyframes borderColor {
+    12.5% {
+      border-color: #ef7810;
+    }
+    25% {
+      border-color: yellow;
+    }
+    37.5% {
+      border-color: #4c2397;
+    }
+    50% {
+      border-color: #7FFF00;
+    }
+    62.5% {
+      border-color: #972332;
+    }
+    75% {
+      border-color: #4f9723;
+    }
+    87.5% {
+      border-color: #5b2397;
+    }
+    100% {
+      border-color: #239597;
+    }
+  }
+
 
 #project-section:hover img {
     transition: all .2s ease-in-out;
