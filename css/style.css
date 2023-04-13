@@ -77,9 +77,9 @@ h2 {
 }
 
 li {
+    color: #436d9f;
     list-style-type:circle;
     font-size: .5em;
-    color: 972332;
     -moz-filter: blur(2.5px);
     -webkit-filter: blur(2.5px);
     filter: blur(2.5px);
@@ -112,6 +112,10 @@ a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+}
+
+#mobile-device{
+    color: #436d9f;
 }
 
 img {
