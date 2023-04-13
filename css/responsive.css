@@ -19,6 +19,10 @@
     padding: 20px;
   }
 
+  img {
+    height: 400px;
+  }
+
   #franklin {
     font-size: .5em;
   }
