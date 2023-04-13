@@ -1,6 +1,7 @@
 // app.js
 let projectImg = document.getElementById("projectImg").src;
 let imgPath = "assets"
+let projectUrl;
 
 
 // Function to handle window resize event
@@ -45,29 +46,14 @@ function fetchProjectsMobile() {
             const linksUl = document.getElementById('links');
             // Loop through the data and generate list items
             data.forEach(project => {
-                li.textContent = project.title;
-                li.appendChild(a);
-                linksUl.appendChild(li);
-            });
-        });
-}
-
-function fetchProjectsMobile() {
-    // Fetch data from the JSON file and dynamically create the projects list
-    fetch('projects.json')
-        .then(response => response.json())
-        .then(data => {
-            const linksUl = document.getElementById('links');
-            // Loop through the data and generate list items
-            data.forEach(project => {
                 const li = document.createElement("li");
                 li.id = project.id;
                 li.textContent = project.title
-
                 linksUl.appendChild(li);
             });
         });
 }
+
 
 function changeImageHover() {
     // Change the image displayed based on which list element is hovered over:
@@ -76,18 +62,22 @@ function changeImageHover() {
         // Get the target li element that triggered the event
         var targetLi = event.target.closest("li");
         // Check if a valid li element was found
-        if (targetLi) {
-            // Get the id of the li element
-            var id = targetLi.id;
-            addEventListener("mouseover", function () {
-                let displayedImg = `${imgPath}/${id}.png`;
-                let htmls = `<img id="projectImg" src="${projectImg.split('assets/')[0]}${displayedImg}" alt="imagine a bird"></img>`;
-                projectImgSection.innerHTML = htmls
-                // document.getElementById("projectImg").src;
-            });
-        }
+
+        getUrlFromId(targetLi.id)
+        .then(url => {
+            let displayedImg = `${imgPath}/${targetLi.id}.png`;
+            let htmls = `<a href="${url}" target="_blank">
+              <img id="projectImg" src="${projectImg.split('assets/')[0]}${displayedImg}" alt="an amazing project should be here">
+            </a>`;
+            projectImgSection.innerHTML = htmls;
+        })
+        .catch(error => console.error(error)); // Handle any error that may occur during fetch or JSON parsing
     });
 }
+
+
+
+
 
 function isTouchDevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -108,3 +98,20 @@ function isTouchDevice() {
 
 changeImageHover()
 
+
+async function getUrlFromId(id) {
+    try {
+        const response = await fetch('projects.json'); // Fetch JSON data
+        const data = await response.json(); // Parse JSON data
+        const objectWithId = data.find(item => item.id === id); // Find object with matching ID
+        if (objectWithId) {
+            return objectWithId.url; // Return URL value from the found object
+        } else {
+            throw new Error(`Object with ID ${id} not found`); // Throw an error if ID is not found
+        }
+    } catch (error) {
+        console.error(error); // Handle any error that may occur during fetch or JSON parsing
+        return null; // Return null or any other appropriate value to indicate failure
+    }
+}
+    
