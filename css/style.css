@@ -52,9 +52,7 @@ section {
 #project-section {
     display: none;
     font-size: 60px;
-    /* -moz-filter: blur(2.5px);
-    -webkit-filter: blur(2.5px);
-    filter: blur(2.5px);     */
+
 }
 
 h2 {
@@ -126,10 +124,10 @@ img {
     filter: blur(14px);
     object-fit: cover;
     transition: all 1s ease-in-out;
-}
+
+  }
 
 #project-section:hover img {
-    /* transform: rotate(180deg); */
     transition: all .2s ease-in-out;
     -moz-filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -137,18 +135,9 @@ img {
   }
 
   #project-section:hover li {
-    /* transform: rotate(180deg); */
     transition: all .2s ease-in-out;
     -moz-filter: blur(0px);
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
-/* 
-#ex a:visited  {
-    color: pink;
-} */
-
-/* #ex {
-    background-color: green;
-} */
 

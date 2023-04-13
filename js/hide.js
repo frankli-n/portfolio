@@ -1,6 +1,5 @@
 const asterix = document.getElementById("asterix");
 const projects = document.getElementById("project-section");
-let projectImg = document.getElementById("projectImg").src;
 
 asterix.addEventListener("click", function () {
   asterix.style.display = "none";
