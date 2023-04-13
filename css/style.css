@@ -133,7 +133,6 @@ img {
     animation: borderColor 112s infinite;
   }
 
-/* Define the keyframes for the border color gradient */
 @keyframes borderColor {
     12.5% {
       border-color: #ef7810;

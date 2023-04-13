@@ -1,17 +1,22 @@
 const asterix = document.getElementById("asterix");
 const projects = document.getElementById("project-section");
+const prjimg = document.getElementById("projectImg")
 
 asterix.addEventListener("click", function () {
   asterix.style.display = "none";
   projects.style.display = "block";
 
-  document.getElementById("f").style.color = "#ef7810";
-  document.getElementById("r").style.color = "yellow";
-  document.getElementById("a").style.color = "#4c2397";
-  document.getElementById("n").style.color = "#449723";
-  document.getElementById("k").style.color = "#972332";
-  document.getElementById("l").style.color = "#4f9723";
-  document.getElementById("i").style.color = "#5b2397";
-  document.getElementById("dash").style.color = "#239597";
-  document.getElementById("n2").style.color = "972395";
+  const ids = ["f", "r", "a", "n", "k", "l", "i", "dash", "n2"];
+  ids.forEach(function(id) {
+    highlightSelectedProject(id);
+  });
 });
+
+var colors = ["#ef7810", "yellow", "#4c2397", "#449723", "#972332", "#4f9723", "#5b2397", "#239597", "#972395"];
+var colorIndex = 0;
+
+function highlightSelectedProject(id) {
+    var element = document.getElementById(id);
+    element.style.color = colors[colorIndex % colors.length];
+    colorIndex++;
+}
