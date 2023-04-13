@@ -13,7 +13,7 @@ function getImgPath() {
     } else {
         imgPath = "assets/small"
     }
-    // console.log(imgPath)
+    console.log(imgPath)
     return imgPath
 }
 
@@ -96,13 +96,15 @@ function isTouchDevice() {
   if (isTouchDevice()) {
     // Code for touch devices
     console.log("Touch device detected");
+    getImgPath()
     fetchProjectsMobile()
   } else {
     // Code for non-touch devices
     console.log("Non-touch device detected");
+    window.addEventListener('resize', getImgPath);
     fetchProjectsDesktop()
   }
   
 
 changeImageHover()
-window.addEventListener('resize', getImgPath);
+

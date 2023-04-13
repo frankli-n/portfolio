@@ -10,7 +10,7 @@
 
   #links {
     width: 100%;
-  }
+  } 
 }
 
 @media only screen and (max-width: 778px) {
@@ -20,7 +20,7 @@
   }
 
   img {
-    height: 400px;
+    height: 300px;
   }
 
   #franklin {
