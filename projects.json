@@ -1,0 +1,33 @@
+[
+    {
+      "id": "ex",
+      "title": "A Note Taking URL Saving Chrome Extension",
+      "url": "https://github.com/frankli-n/leads-chrome-extension",
+      "target": "_blank"
+    },
+    {
+      "id": "me",
+      "title": "A React Meme Generator",
+      "url": "https://frankli-n.github.io/meme-generator-for-gh-pages/",
+      "target": "_blank"
+    },
+    {
+      "id": "mm",
+      "title": "A Responsive Website for a Mosaic Artist",
+      "url": "http://www.memsmosaics.com",
+      "target": "_blank"
+    },
+    {
+      "id": "ip",
+      "title": "A Functional Bootstrap Website for a Printing Company",
+      "url": "http://www.imageprinting.com.au",
+      "target": "_blank"
+    },
+    {
+      "id": "da",
+      "title": "A Fun Bootstrap Website for a Clothing Store",
+      "url": "https://frankli-n.github.io/domestic-accessories/",
+      "target": "_blank"
+    }
+  ]
+  
