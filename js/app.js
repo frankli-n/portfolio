@@ -62,6 +62,7 @@ function changeImageHover() {
         // Get the target li element that triggered the event
         var targetLi = event.target.closest("li");
         // Check if a valid li element was found
+        highlightSelectedProject(targetLi.id)
 
         getUrlFromId(targetLi.id)
         .then(url => {
@@ -72,6 +73,7 @@ function changeImageHover() {
             projectImgSection.innerHTML = htmls;
         })
         .catch(error => console.error(error)); // Handle any error that may occur during fetch or JSON parsing
+
     });
 }
 
@@ -115,3 +117,35 @@ async function getUrlFromId(id) {
     }
 }
     
+// async function highlightSelectedProject(id) {
+//     try {
+//         const response = await fetch('projects.json'); // Fetch JSON data
+//         const data = await response.json(); // Parse JSON data
+//         const objectWithId = data.find(item => item.id === id); // Find object with matching ID
+//         console.log(objectWithId    )
+//     } catch (error) {
+//         console.error(error); // Handle any error that may occur during fetch or JSON parsing
+//         return null; // Return null or any other appropriate value to indicate failure
+//     }
+// }
+
+
+// function highlightSelectedProject(id) {
+//     console.log(id);
+//     var element = document.getElementById(id);
+//     if (element) {
+//         element.style.color = "green";
+//     } else {
+//         console.log("Element with ID " + id + " not found.");
+//     }
+// }
+
+
+var colors = ["#ef7810", "yellow", "#4c2397", "#449723", "#972332", "#4f9723", "#5b2397", "#239597", "#972395"];
+var colorIndex = 0;
+
+function highlightSelectedProject(id) {
+    var element = document.getElementById(id);
+    element.style.color = colors[colorIndex % colors.length];
+    colorIndex++;
+}
