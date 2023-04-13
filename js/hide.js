@@ -1,11 +1,5 @@
 const asterix = document.getElementById("asterix");
 const projects = document.getElementById("project-section");
-// const projectImg = document.getElementById("projectImg");
-// const me = document.getElementById("me");
-// const ex = document.getElementById("ex");
-// const da = document.getElementById("da");
-// const ip = document.getElementById("ip");
-// const mm = document.getElementById("mm");
 let projectImg = document.getElementById("projectImg").src;
 
 asterix.addEventListener("click", function () {

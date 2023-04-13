@@ -126,8 +126,6 @@ img {
     filter: blur(14px);
     object-fit: cover;
     transition: all 1s ease-in-out;
-
-
 }
 
 #project-section:hover img {
@@ -153,3 +151,4 @@ img {
 /* #ex {
     background-color: green;
 } */
+
