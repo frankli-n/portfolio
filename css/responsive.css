@@ -1,9 +1,10 @@
 /* Use media query to apply percentage width on smaller screens */
+
 @media screen and (max-width: 1143px) {
   img {
     width: 100%;
     /* Change to desired percentage value */
-    height: 50%;
+    height: 500px;
     object-position: 0 0;
     /* object-fit: cover; */
   }
