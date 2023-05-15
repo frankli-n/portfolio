@@ -5,7 +5,7 @@
     width: 100%;
     /* Change to desired percentage value */
     height: 500px;
-    object-position: 0 0;
+    object-position: 50 0;
     /* object-fit: cover; */
   }
 
@@ -18,10 +18,12 @@
   .container {
     margin: 0;
     padding: 20px;
+    
   }
 
   img {
     height: 300px;
+    object-position: 50 0;
   }
 
   #franklin {
