@@ -59,6 +59,7 @@ function fetchProjectsMobile() {
 var currentColorIndex = 0;
 // Function to change color of 'a' element when hovered
 function changeColorOnHover(event) {
+
     // Get the target 'a' element that triggered the event
     var targetA = event.target.closest("a");
     // Get the next color from the colors list

@@ -1,26 +1,36 @@
-@keyframes bgColor {
-    12.5% {
-      color: #ef7810;
-    }
-    25% {
-      color: yellow;
-    }
-    37.5% {
-      color: #4c2397;
-    }
-    50% {
-      color: #7FFF00;
-    }
-    62.5% {
-      color: #972332;
-    }
-    75% {
-      color: #4f9723;
-    }
-    87.5% {
-      color: #5b2397;
-    }
-    100% {
-      color: #239597;
-    }
+  #asterix {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 32px;
+    font-weight: bold;
+    animation: streak-animation 5s linear infinite;
+    opacity: 1;
+    font-family: "Lucida Console", "Courier New", monospace;
+    cursor: pointer;
+    transition: all 2s ease-out;
+    color: white;
+    color: #972332;
+
+}
+
+#asterix:hover{
+    opacity: 1 ;
+    color: white;
+    /* animation-play-state: paused; */
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+@keyframes streak-animation {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(100vw); /* Changed the value to 100vw to cover the entire width of the screen */
+  }
+}
+  

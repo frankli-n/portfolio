@@ -1,6 +1,6 @@
 const asterix = document.getElementById("asterix");
 const projects = document.getElementById("project-section");
-const prjimg = document.getElementById("projectImg")
+const prjimg = document.getElementById("projectImg");
 
 asterix.addEventListener("click", function () {
   asterix.style.display = "none";
@@ -12,6 +12,10 @@ asterix.addEventListener("click", function () {
   });
 });
 
+
+
+
+
 var colors = ["#ef7810", "yellow", "#4c2397", "#449723", "#972332", "#4f9723", "#5b2397", "#239597", "#972395"];
 var colorIndex = 0;
 
@@ -20,3 +24,5 @@ function highlightSelectedProject(id) {
     element.style.color = colors[colorIndex % colors.length];
     colorIndex++;
 }
+
+

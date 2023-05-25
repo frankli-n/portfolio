@@ -1,8 +1,14 @@
 [
     {
       "id": "af",
-      "title": "Banking and tax app for business - a startup that I'm currently interning for",
+      "title": "A banking and tax app for business - I'm currently interning here as a full stack developer",
       "url": "https://www.accountedfor.com.au/",
+      "target": "_blank"
+    },
+    {
+      "id": "ci",
+      "title": "An full stack car insurance policy selector which sends and retrieves data from a Firebase Database.",
+      "url": "https://frankli-n.github.io/insurance-policy-selector/",
       "target": "_blank"
     },
     {

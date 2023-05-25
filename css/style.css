@@ -21,33 +21,6 @@ section {
     height: 100%;
 }
 
-#asterix {
-    position: absolute;
-    top: 35vh;
-    width: 100%;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 10em;
-    font-weight: 900;   
-    text-align: center;
-    cursor: pointer;
-    transition: all 2s ease-out;
-    color: white;
-    animation: bgColor 5s infinite linear;
-    color: #239597;
-    -moz-filter: blur(0px);
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: .075;
-}
-
-#asterix:hover{
-    opacity: 1 ;
-    color: white;
-    animation-play-state: paused;
-    -moz-filter: blur(4px);
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-}
 
 #project-section {
     display: none;
