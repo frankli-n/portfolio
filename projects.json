@@ -7,7 +7,7 @@
     },
     {
       "id": "ci",
-      "title": "An full stack car insurance policy selector which sends and retrieves data from a Firebase Database.",
+      "title": "A full stack car insurance policy selector which sends and retrieves data from a Firebase Database.",
       "url": "https://frankli-n.github.io/insurance-policy-selector/",
       "target": "_blank"
     },
