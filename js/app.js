@@ -83,11 +83,19 @@ function changeImageHover() {
             highlightSelectedProject(targetLi.id);
             getUrlFromId(targetLi.id)
                 .then(url => {
-                    let displayedImg = `${imgPath}/${targetLi.id}.png`;
-                    let htmls = `<a href="${url}" target="_blank">
-                        <img id="projectImg" src="${projectImg.split('assets/')[0]}${displayedImg}" alt="an amazing project should be here">
-                    </a>`;
-                    projectImgSection.innerHTML = htmls;
+                    let displayedImg;
+                    let fileExtension = url.split('.').pop().toLowerCase();
+                    if (fileExtension === 'mp4') {
+                        displayedImg = `<video controls>
+                            <source src="${url}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>`;
+                    } else {
+                        displayedImg = `<a href="${url}" target="_blank">
+                            <img id="projectImg" src="${projectImg.split('assets/')[0]}${imgPath}/${targetLi.id}.png" alt="an amazing project should be here">
+                        </a>`;
+                    }
+                    projectImgSection.innerHTML = displayedImg;
                 })
                 .catch(error => console.error(error)); // Handle any error that may occur during fetch or JSON parsing
         }
@@ -95,6 +103,7 @@ function changeImageHover() {
         changeColorOnHover(event);
     });
 }
+
     
 
 

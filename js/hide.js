@@ -11,11 +11,6 @@ asterix.addEventListener("click", function () {
     highlightSelectedProject(id);
   });
 });
-
-
-
-
-
 var colors = ["#ef7810", "yellow", "#4c2397", "#449723", "#972332", "#4f9723", "#5b2397", "#239597", "#972395"];
 var colorIndex = 0;
 
