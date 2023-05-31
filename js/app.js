@@ -14,7 +14,6 @@ function getImgPath() {
     } else {
         imgPath = "assets/small"
     }
-    console.log(imgPath)
     return imgPath
 }
 
@@ -82,7 +81,7 @@ function changeImageHover() {
         var targetLi = event.target.closest("li");
         // Check if a valid li element was found
         if (targetLi) {
-            highlightSelectedProject(targetLi.id);
+            // highlightSelectedProject(targetLi.id);
             const url = await getUrlFromId(targetLi.id);
             if (url) {
                 let displayedImg = `${imgPath}/${targetLi.id}.${targetLi.type}`;

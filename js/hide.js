@@ -15,8 +15,9 @@ asterix.addEventListener("click", function () {
 var colors = ["#ef7810", "yellow", "#4c2397", "#449723", "#972332", "#4f9723", "#5b2397", "#239597", "#972395"];
 var colorIndex = 0;
 
-function highlightSelectedProject(id) {
-    var element = document.getElementById(id);
-    element.style.color = colors[colorIndex % colors.length];
-    colorIndex++;
-}
+// function highlightSelectedProject(id) {
+//   console.log('yolo')
+//     var element = document.getElementById(id);
+//     element.style.color = colors[colorIndex % colors.length];
+//     colorIndex++;
+// }

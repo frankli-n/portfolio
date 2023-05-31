@@ -1,5 +1,6 @@
 #f {
     transition: all 0.2s ease-in;
+    color: #ef7810;
     opacity: .5;
     -moz-filter: blur(4px);
     -webkit-filter: blur(4px);
@@ -15,6 +16,8 @@
 }
 
 #r {
+    color: yellow;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -29,6 +32,8 @@
     filter: blur(0px);
 }
 #a {
+    color: #4c2397;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -44,6 +49,8 @@
 
 }
 #n {
+    color: #449723;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -58,6 +65,8 @@
     filter: blur(0px);
 }
 #k {
+    color: #972332;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -72,6 +81,8 @@
     filter: blur(0px);
 }
 #l {
+    color: #4f9723;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -86,6 +97,8 @@
     filter: blur(0px);
 }
 #i {
+    color: #5b2397;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -100,6 +113,8 @@
     filter: blur(0px);
 }
 #dash {
+    color: #239597;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
@@ -114,6 +129,8 @@
     filter: blur(0px);
 }
 #n2 {
+    color: #972395;
+
     transition: all 0.2s ease-out;
     opacity: .5;
     -moz-filter: blur(4px);
