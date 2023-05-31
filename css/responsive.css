@@ -10,7 +10,7 @@
   }
 
   #franklin {
-    font-size: .5em;
+    font-size: 2em;
   }
 
   #project-section {
@@ -37,7 +37,7 @@
   }
 
   #franklin {
-    font-size: .5em;
+    font-size: 1em;
   }
 
   #project-section {
@@ -67,34 +67,11 @@
     width: 100vw;
   }
 
-  #franklin {
-    font-size: .5em;
-  }
-
   #project-section {
     font-size: .4em;
   }
 
 
-  #project-section h2 {
-    color: #972332;
-    -moz-filter: blur(0px);
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-  }
 
-  #project-section img {
-    transition: all .2s ease-in-out;
-    -moz-filter: blur(0px);
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-  }
-
-  #project-section li {
-    transition: all .2s ease-in-out;
-    -moz-filter: blur(0px);
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-  }
 
 }

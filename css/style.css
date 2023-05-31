@@ -37,9 +37,9 @@ h2 {
     transition: all 0.2s ease-out;
     width: 50vw;
     margin-bottom: 0px;
-    -moz-filter: blur(2.5px);
+    /* -moz-filter: blur(2.5px);
     -webkit-filter: blur(2.5px);
-    filter: blur(2.5px);
+    filter: blur(2.5px); */
 }
 
 #project-section:hover h2 {
@@ -53,9 +53,9 @@ li {
     color: #436d9f;
     list-style-type:circle;
     font-size: .5em;
-    -moz-filter: blur(2.5px);
+    /* -moz-filter: blur(2.5px);
     -webkit-filter: blur(2.5px);
-    filter: blur(2.5px);
+    filter: blur(2.5px); */
 }
 
 #links {

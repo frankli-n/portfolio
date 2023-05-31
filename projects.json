@@ -1,56 +1,56 @@
 [
   {
       "id": "af",
-      "title": "A banking and tax app for business - I'm currently interning here as a full stack developer",
+      "title": "accountedfor --------- a fintech startup I'm contributing to | React",
       "url": "https://www.accountedfor.com.au/",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "tz",
-      "title": "A react built dice game",
+      "title": "tenzies -------------- a dice rolling game | React ",
       "url": "https://frankli-n.github.io/tenzies/",
       "target": "_blank",
       "type": "gif"
   },
   {
       "id": "ci",
-      "title": "A full stack car insurance policy selector which sends and retrieves data from a Firebase Database.",
+      "title": "insurance selector --- a car insurance selector | JS, Bootstrap, Firebase Realtime Database",
       "url": "https://frankli-n.github.io/insurance-policy-selector/",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "ex",
-      "title": "A Note Taking URL Saving Chrome Extension",
+      "title": "note saver ----------- a chrome extension | JS, localStorage",
       "url": "https://github.com/frankli-n/leads-chrome-extension",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "me",
-      "title": "A React Meme Generator",
+      "title": "meme generator ------- a project to create your own meme | React",
       "url": "https://frankli-n.github.io/meme-generator-for-gh-pages/",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "mm",
-      "title": "A Responsive Website for a Mosaic Artist",
+      "title": "memsmosaics ---------- a website built for a mosaic artist | HTML, CSS, Javascript",
       "url": "http://www.memsmosaics.com",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "ip",
-      "title": "A Functional Bootstrap Website for a Printing Company",
+      "title": "image printing ------- a website built for a commercial printer | Bootstrap",
       "url": "http://www.imageprinting.com.au",
       "target": "_blank",
       "type": "png"
   },
   {
       "id": "da",
-      "title": "A Fun Bootstrap Website for a Clothing Store",
+      "title": "domestic accessories - a website built for a clothing line | HTML, CSS, Javascript",
       "url": "https://frankli-n.github.io/domestic-accessories/",
       "target": "_blank",
       "type": "png"
