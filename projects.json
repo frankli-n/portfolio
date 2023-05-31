@@ -1,51 +1,58 @@
 [
-    {
+  {
       "id": "af",
       "title": "A banking and tax app for business - I'm currently interning here as a full stack developer",
       "url": "https://www.accountedfor.com.au/",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "tz",
       "title": "A react built dice game",
       "url": "https://frankli-n.github.io/tenzies/",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "gif"
+  },
+  {
       "id": "ci",
       "title": "A full stack car insurance policy selector which sends and retrieves data from a Firebase Database.",
       "url": "https://frankli-n.github.io/insurance-policy-selector/",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "ex",
       "title": "A Note Taking URL Saving Chrome Extension",
       "url": "https://github.com/frankli-n/leads-chrome-extension",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "me",
       "title": "A React Meme Generator",
       "url": "https://frankli-n.github.io/meme-generator-for-gh-pages/",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "mm",
       "title": "A Responsive Website for a Mosaic Artist",
       "url": "http://www.memsmosaics.com",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "ip",
       "title": "A Functional Bootstrap Website for a Printing Company",
       "url": "http://www.imageprinting.com.au",
-      "target": "_blank"
-    },
-    {
+      "target": "_blank",
+      "type": "png"
+  },
+  {
       "id": "da",
       "title": "A Fun Bootstrap Website for a Clothing Store",
       "url": "https://frankli-n.github.io/domestic-accessories/",
-      "target": "_blank"
-    }
-  ]
-  
+      "target": "_blank",
+      "type": "png"
+  }
+]

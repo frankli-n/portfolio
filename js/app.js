@@ -28,6 +28,7 @@ function fetchProjectsDesktop() {
             data.forEach(project => {
                 const li = document.createElement("li");
                 li.id = project.id;
+                li.type = project.type; // Add the type property to the li element
                 const a = document.createElement("a");
                 a.href = project.url;
                 a.target = project.target;
@@ -48,11 +49,13 @@ function fetchProjectsMobile() {
             data.forEach(project => {
                 const li = document.createElement("li");
                 li.id = project.id;
+                li.type = project.type; // Add the type property to the li element
                 li.textContent = project.title
                 linksUl.appendChild(li);
             });
         });
 }
+
 
 
 
@@ -71,38 +74,33 @@ function changeColorOnHover(event) {
 }
 
 
-// Update your existing function to include the hover effect
 function changeImageHover() {
     // Change the image displayed based on which list element is hovered over:
     // Add event listener to parent ul element
-    document.getElementById("links").addEventListener("mouseover", function (event) {
+    document.getElementById("links").addEventListener("mouseover", async function (event) {
         // Get the target li element that triggered the event
         var targetLi = event.target.closest("li");
         // Check if a valid li element was found
         if (targetLi) {
             highlightSelectedProject(targetLi.id);
-            getUrlFromId(targetLi.id)
-                .then(url => {
-                    let displayedImg;
-                    let fileExtension = url.split('.').pop().toLowerCase();
-                    if (fileExtension === 'mp4') {
-                        displayedImg = `<video controls>
-                            <source src="${url}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>`;
-                    } else {
-                        displayedImg = `<a href="${url}" target="_blank">
-                            <img id="projectImg" src="${projectImg.split('assets/')[0]}${imgPath}/${targetLi.id}.png" alt="an amazing project should be here">
-                        </a>`;
-                    }
-                    projectImgSection.innerHTML = displayedImg;
-                })
-                .catch(error => console.error(error)); // Handle any error that may occur during fetch or JSON parsing
+            const url = await getUrlFromId(targetLi.id);
+            if (url) {
+                let displayedImg = `${imgPath}/${targetLi.id}.${targetLi.type}`;
+                let htmls = `<a href="${url}" target="_blank">
+                    <img id="projectImg" src="${projectImg.split('assets/')[0]}${displayedImg}" alt="an amazing project should be here">
+                </a>`;
+                projectImgSection.innerHTML = htmls;
+            } else {
+                console.error(`URL not found for ID ${targetLi.id}`);
+            }
         }
         // Call the changeColorOnHover function to change the color of the 'a' element
         changeColorOnHover(event);
     });
 }
+
+
+
 
     
 
