@@ -60,17 +60,24 @@
     padding: 20px;
     
   }
+  #project-section {
+    /* width: 20vw; */
+    font-size: .3em;
+  }
 
   img {
     height: 300px;
     object-position: 50 0;
-    width: 80vw;
+    /* width: 100vw; */
+    overflow: hidden;
   }
 
-  #project-section {
-    font-size: .3em;
+  #projectImgSection {
+    width: 90vw;
+    padding-right: 20px;
+    /* border-style: dashed;
+    border-color: green; */
   }
-
 
 
 
