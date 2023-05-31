@@ -2,6 +2,7 @@ const asterix = document.getElementById("asterix");
 const projects = document.getElementById("project-section");
 const prjimg = document.getElementById("projectImg");
 
+
 asterix.addEventListener("click", function () {
   asterix.style.display = "none";
   projects.style.display = "block";
@@ -19,5 +20,3 @@ function highlightSelectedProject(id) {
     element.style.color = colors[colorIndex % colors.length];
     colorIndex++;
 }
-
-

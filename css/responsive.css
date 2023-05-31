@@ -1,5 +1,32 @@
 /* Use media query to apply percentage width on smaller screens */
 
+@media screen and (min-width: 1143px) {
+  img {
+    width: 100%;
+    /* Change to desired percentage value */
+    height: 500px;
+    object-position: 50 0;
+    /* object-fit: cover; */
+  }
+
+  #franklin {
+    font-size: .5em;
+  }
+
+  #project-section {
+    font-size: .4em;
+  }
+
+  #links {
+    width: 100%;
+  } 
+
+  img {
+    height: 400px;
+    width: 50vw;
+  }
+}
+
 @media screen and (max-width: 1143px) {
   img {
     width: 100%;
@@ -9,9 +36,22 @@
     /* object-fit: cover; */
   }
 
+  #franklin {
+    font-size: .5em;
+  }
+
+  #project-section {
+    font-size: .4em;
+  }
+
   #links {
     width: 100%;
   } 
+
+  img {
+    height: 400px;
+    object-position: 50 0;
+  }
 }
 
 @media only screen and (max-width: 778px) {
@@ -24,6 +64,7 @@
   img {
     height: 300px;
     object-position: 50 0;
+    width: 100vw;
   }
 
   #franklin {

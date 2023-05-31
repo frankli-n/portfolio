@@ -96,10 +96,8 @@ img {
     margin-top: 10px;
     width: 1000px;
     height: 500px;
-    -moz-filter: blur(14px);
-    -webkit-filter: blur(14px);
-    filter: blur(14px);
     object-fit: cover;
+    object-position: top;
     transition: all 1s ease-in-out;
     border-width: 2px;
     border-style: solid;
@@ -148,3 +146,23 @@ img {
     filter: blur(0px);
   }
 
+  /* #project-section h2 {
+    color: #972332;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  } */
+
+  /* #project-section img {
+    transition: all .2s ease-in-out;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #project-section li {
+    transition: all .2s ease-in-out;
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  } */
